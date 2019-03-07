@@ -1,0 +1,115 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring Data Rest",
+		"_postman_id": "d2ec2274-6f42-d883-82f1-f1dfe92f44f4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Student by Id",
+			"request": {
+				"url": "http://localhost:8080/student/search/id/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Student",
+			"request": {
+				"url": "http://localhost:8080/student/edit/id/16",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Ranjith",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "marks",
+							"value": "84.00",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Student",
+			"request": {
+				"url": "http://localhost:8080/student/create",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Guna",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "marks",
+							"value": "60.00",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"url": "http://localhost:8080/student/delete/id/12",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search Student by name",
+			"request": {
+				"url": "http://localhost:8080/student/search/name/ram",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search All Students",
+			"request": {
+				"url": "http://localhost:8080/student/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
